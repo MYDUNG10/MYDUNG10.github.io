@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DUNG'S WISH LIST</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="images/favicon.png"/>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script>
+            var normal_mode = true;
+            function changeMode(){
+                if (normal_mode){
+                    normal_mode = false;
+                    $(document).ready(function(){
+                        $(".hover_wrapper").css({ 'opacity' : '1'});
+                    });
+                } else {
+                    normal_mode = true;
+                    $(document).ready(function(){
+                        $(".hover_wrapper").css({ 'opacity' : '0'});
+                    });
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <span class="name">DUNG<span style="
+                cursor: pointer;" onclick="changeMode()">'</span>S</span> WISH LIST
+        </div>
+        <div class="row">
+            <div class="item">
+                <img src="images/DMGhillie01.png"/>
+                <a class="hover_wrapper" href="https://www.zalando.dk/dr-martens-ghillie-snoresko-navy-aqua-glidecognac-aqua-glide-do215m005-k11.html" target="_blank">
+                    <img src="images/DMGhillie02.png"/>
+                    <div class="label">Dr. Martens<br/>1461 Ghillie 38</div>
+                    <div class="price"><p>924 KR</p></div>
+                </a>
+            </div>
+            <div class="item">
+                <img src="images/DMMono01.png"/>
+                <a class="hover_wrapper" href="https://www.zalando.dk/dr-martens-snoresko-mono-black-do215a00v-q11.html" target="_blank">
+                    <img src="images/DMMono02.png"/>
+                    <div class="label">Dr. Martens<br/>1461 Mono Black 38</div>
+                    <div class="price"><p>839 KR</p></div>
+                </a>
+            </div>
+            <div class="item">
+                <img src="images/DMChelsea01.png"/>
+                <a class="hover_wrapper" href="https://www.pricerunner.dk/pl/337-3487922/Sko/Dr-Martens-2976-Chelsea-Boot-Black-Sammenlign-Priser" target="_blank">
+                    <img src="images/DMChelsea02.png"/>
+                    <div class="label">Dr. Martens<br/>2976 Chelsea Boots 38</div>
+                    <div class="price"><p>179 €</p></div>
+                </a>
+            </div>
+            <div class="item">
+                <img src="images/Monki01.png"/>
+                <a class="hover_wrapper" href="https://www.monki.com/en_dkk/clothing/jumpsuits/product.denim-dungarees-black.0627624001.html" target="_blank">
+                    <img src="images/Monki02.png"/>
+                    <div class="label">Monki<br/>Denim Dungarees XS</div>
+                    <div class="price"><p>400 KR</p></div>
+                </a>
+            </div>
+            <div class="item">
+                <img src="images/RODE01.png"/>
+                <a class="hover_wrapper" href="https://www.pricerunner.dk/pl/176-3830685/Mikrofoner/ROEDE-VideoMicro-Sammenlign-Priser" target="_blank">
+                    <img src="images/RODE02.png"/>
+                    <div class="label">RØDE VideoMicro</div>
+                    <div class="price"><p>46 €</p></div>
+                </a>
+            </div>
+            <div class="item">
+                <img src="images/SonyE01.png"/>
+                <a class="hover_wrapper" href="https://www.pricerunner.dk/pl/543-2934891/Kamera-Objektiver/Sony-E-PZ-18-105mm-F4-G-OSS-Sammenlign-Priser" target="_blank">
+                    <img src="images/SonyE02.png"/>
+                    <div class="label">SONY E 18-105MM<br/>F/4 OSS</div>
+                    <div class="price"><p>3875 KR</p></div>
+                </a>
+            </div>
+                        <div class="item">
+                <img src="images/Sirui01.png"/>
+                <a class="hover_wrapper" href="https://www.pricerunner.dk/pl/281-3287297/Kamerastativer/Sirui-3T-35K-Sammenlign-Priser" target="_blank">
+                    <img src="images/Sirui02.png"/>
+                    <div class="label">Sirui 3T-35K</div>
+                    <div class="price"><p>695 KR</p></div>
+                </a>
+            </div>
+                                    <div class="item">
+                <img src="images/Bose01.png"/>
+                <a class="hover_wrapper" href="https://www.elgiganten.dk/product/lyd-hi-fi/hovedtelefoner/QC352BK/bose-quietcomfort-35-qc35-ii-tradlose-hovedtelefoner-sort" target="_blank">
+                    <img src="images/Bose02.png"/>
+                    <div class="label">Bose QuietComfort 35<br/>QC35 II Black</div>
+                    <div class="price"><p>1999 KR</p></div>
+                </a>
+            </div>
+            <!--<div class="item">
+                <img src="images/empty.png"/>
+                <a class="hover_wrapper" target="_blank">
+                    <div class="desc">
+                        <ul>
+                            <li>Contact Grill</li>
+                            <li>Strainer</li>
+                            <li>Black Cap</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>-->
+        </div>
+    </body>
+</html>
