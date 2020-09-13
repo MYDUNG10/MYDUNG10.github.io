@@ -9,19 +9,19 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #232120;
     text-align: center;
 }
 
 .header {
-    color: grey;
+    color: #ddd6cd;
     font-weight: 900;
     font-size: 5em;
     padding: .2em;
 }
 
 .name {
-    color: #bab5a2;
+    color: #37913d;
 }
 
 .row {
