@@ -6,145 +6,220 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap" rel="stylesheet">
         <link rel="icon" type="image/png" href="images/favicon.png"/>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script>
-            var normal_mode = true;
-            function changeMode(){
-                if (normal_mode){
-                    normal_mode = false;
-                    $(document).ready(function(){
-                        $(".hover_wrapper").css({ 'opacity' : '1'});
-                    });
-                } else {
-                    normal_mode = true;
-                    $(document).ready(function(){
-                        $(".hover_wrapper").css({ 'opacity' : '0'});
-                    });
-                }
-            }
-        </script>
+        <script src="app.js"></script>
+        
     </head>
-    <body>
+    <body onload="script();">
         <div class="header">
             <span class="name">DUNG<span style="
                 cursor: pointer;" onclick="changeMode()">'</span>S</span> WISH LIST
         </div>
-        <div class="row">
-            <div class="item">
-                <img src="images/DMMono%20-%2001.png"/>
-                <a class="hover_wrapper" href="https://www.zalando.dk/dr-martens-snoresko-mono-black-do215a00v-q11.html" target="_blank">
-                    <img src="images/DMMono02.png"/>
-                    <div class="label">Dr. Martens<br/>1461 Mono Black 38</div>
-                    <div class="price"><p>839 KR</p></div>
-                </a>
-            </div>
-            <div class="item">
-                <img src="images/DMChelsea%20-%2001.png"/>
-                <a class="hover_wrapper" href="https://www.pricerunner.dk/pl/337-3487922/Sko/Dr-Martens-2976-Chelsea-Boot-Black-Sammenlign-Priser" target="_blank">
-                    <img src="images/DMChelsea02.png"/>
-                    <div class="label">Dr. Martens<br/>2976 Chelsea Boots 38</div>
-                    <div class="price"><p>179 €</p></div>
-                </a>
-            </div>
-            <div class="item">
-                <img src="images/Monki%20-%2001.png"/>
-                <a class="hover_wrapper" href="https://www.monki.com/en_dkk/clothing/jumpsuits/product.denim-dungarees-black.0627624001.html" target="_blank">
-                    <img src="images/Monki02.png"/>
-                    <div class="label">Monki<br/>Denim Dungarees XS</div>
-                    <div class="price"><p>400 KR</p></div>
-                </a>
-            </div>
-            <div class="item">
-                <img src="images/PhilipsHueLightstripPlus2m%20-%2001.png"/>
-                <a class="hover_wrapper" href="https://www.pricerunner.dk/pl/460-3739686/Lamper/Philips-Hue-Lightstrip-Plus-2m-Hyldebelysning-Sammenlign-Priser" target="_blank">
-                    <img src="images/PhilipsHueLightstripPlus2m%20-%2002.png"/>
-                    <div class="label">Philips Hue<br/>Lightstrip Plus 2 m</div>
-                    <div class="price"><p>460 KR</p></div>
-                </a>
-            </div>
-            <div class="item">
-                <img src="images/PhilipsHueBridge%20-%2001.png"/>
-                <a class="hover_wrapper" href="https://www.pricerunner.dk/pl/1577-3678662/Smart-home/Philips-Hue-Bridge-Sammenlign-Priser" target="_blank">
-                    <img src="images/PhilipsHueBridge%20-%2002.png"/>
-                    <div class="label">Philips Hue<br/>Bridge</div>
-                    <div class="price"><p>349 KR</p></div>
-                </a>
-            </div>
-            <div class="item">
-                <img src="images/LenovoLegionTower5%20-%2001.png"/>
-                <a class="hover_wrapper" href="https://www.pricerunner.dk/pl/281-3287297/Kamerastativer/Sirui-3T-35K-Sammenlign-Priser" target="_blank">
-                    <img src="images/LenovoLegionTower5%20-%2002.png"/>
-                    <div class="label">Lenovo<br/>Legion Tower 5</div>
-                    <div class="price"><p>10.999 KR</p></div>
-                </a>
-            </div>
-            <div class="item">
-                <img src="images/StadlerFormTim%20-%2001.png"/>
-                <a class="hover_wrapper" href="https://www.pricerunner.dk/pl/401-4935831/Ventilator/Stadler-Form-Tim-Sammenlign-Priser" target="_blank">
-                    <img src="images/StadlerFormTim%20-%2002.png"/>
-                    <div class="label">Stadler Form Tim<br/>Black</div>
-                    <div class="price"><p>466 KR</p></div>
-                </a>
-            </div>
-            <div class="item">
-                <img src="images/PresonusErisE35%20-%2001.png"/>
-                <a class="hover_wrapper" href="https://www.pricerunner.dk/pl/543-2934891/Kamera-Objektiver/Sony-E-PZ-18-105mm-F4-G-OSS-Sammenlign-Priser" target="_blank">
-                    <img src="images/PresonusErisE35%20-%2002.png"/>
-                    <div class="label">PreSonus<br/>Eris E3.5</div>
-                    <div class="price"><p>700 KR</p></div>
-                </a>
-            </div>
-            <div class="item">
-                <img src="images/Alesis%20-%2001.png"/>
-                <a class="hover_wrapper" href="https://www.musique-shop.fr/dk/alesis-tastiera-master-49-tasti-v49.html?gclid=Cj0KCQjw0pfzBRCOARIsANi0g0t5v7k0a11OP22L4FWY2uJYkuPoQc2McXd5-HYU0p-ykl30TXYmUY0aAtu_EALw_wcB&fbclid=IwAR0-KLt5mdEYetct5MOka7JD4ONhexu2TN1J2hWoilbXAwM4KuOQXQ2ftPE" target="_blank">
-                    <img src="images/Alesis02.png"/>
-                    <div class="label">Alesis V49</div>
-                    <div class="price"><p>710 KR</p></div>
-                </a>
-            </div>
-            <div class="item">
-                <img src="images/RODE%20-%2001.png"/>
-                <a class="hover_wrapper" href="https://www.pricerunner.dk/pl/176-3830685/Mikrofoner/ROEDE-VideoMicro-Sammenlign-Priser" target="_blank">
-                    <img src="images/RODE02.png"/>
-                    <div class="label">RØDE VideoMicro</div>
-                    <div class="price"><p>46 €</p></div>
-                </a>
-            </div>
-            <div class="item">
-                <img src="images/BallHead%20-%2001.png"/>
-                <a class="hover_wrapper" href="https://www.amazon.de/koolehaoda-design-Ballhead-Release-Maximum/dp/B071WJ9SV9/ref=sr_1_1?dchild=1&keywords=highlights%2Bquick%2Brelease%2Bplate&qid=1596677797&s=videogames&sr=1-1&th=1" target="_blank">
-                    <img src="images/BallHead%20-%2002.png"/>
-                    <div class="label">Highlights<br/>E1-X</div>
-                    <div class="price"><p>€29.99</p></div>
-                </a>
-            </div>
-            <div class="item">
-                <img src="images/Moman%20-%2001.png"/>
-                <a class="hover_wrapper" href="https://www.amazon.de/koolehaoda-design-Ballhead-Release-Maximum/dp/B071WJ9SV9/ref=sr_1_1?dchild=1&keywords=highlights%2Bquick%2Brelease%2Bplate&qid=1596677797&s=videogames&sr=1-1&th=1" target="_blank">
-                    <img src="images/Moman%20-%2002.png"/>
-                    <div class="label">Moman<br/>Tabletop Tripod</div>
-                    <div class="price"><p>€29.99</p></div>
-                </a>
-            </div>
-            <div class="item">
-                <img src="images/SmallRig%20-%2001.png"/>
-                <a class="hover_wrapper" href="https://www.amazon.de/SMALLRIG-Tischstativ-Kamerastativ-Schraubbefestigung-Smartphone/dp/B0833PBD1L/ref=sr_1_4?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=T7ZJJ0HSE0L7&dchild=1&keywords=smallrig%2Bstativ&qid=1596640048&sprefix=smallrig%2Bsta%2Caps%2C204&sr=8-4&th=1" target="_blank">
-                    <img src="images/SmallRig%20-%2002.png"/>
-                    <div class="label">SmallRig<br/>Tabletop Tripod</div>
-                    <div class="price"><p>€23.99</p></div>
-                </a>
-            </div>
-            <!--<div class="item">
-                <img src="images/empty.png"/>
-                <a class="hover_wrapper" target="_blank">
-                    <div class="desc">
-                        <ul>
-                            <li>Contact Grill</li>
-                            <li>Strainer</li>
-                            <li>Black Cap</li>
-                        </ul>
-                    </div>
-                </a>
-            </div>-->
-        </div>
+
+        <div class="divider">DESKTOP SETUP</div>
+        <div id="section_desktop" class="row"></div>
+        
+        <div class="divider">BOOKS</div>
+        <div id="section_books" class="row"></div>
+        
+        <div class="divider">INSTRUMENTS</div>
+        <div id="section_instruments" class="row"></div>
+        
+        <div class="divider">CAMERA</div>
+        <div id="section_camera" class="row"></div>
+        
+        <div class="divider">CLOTHES</div>
+        <div id="section_clothes" class="row"></div>        
+        
+        <div class="divider">INTERIOR</div>        
+        <div id="section_interior" class="row"></div>
+        
+        <div class="divider">TOYS</div>        
+        <div id="section_toys" class="row"></div>
+
     </body>
+    <script type="text/javascript">
+        window.onload = function () { 
+            /*******************************************
+            ********************************************
+            ********************************************
+            ********************************************
+            ********************************************
+                DESKTOP SETUP
+            ********************************************
+            ********************************************
+            ********************************************
+            ********************************************
+            ********************************************/
+            
+            var desktopRow = document.getElementById("section_desktop"); 
+            
+            //Presonus Eris E5
+            addItem(desktopRow, "images/PresonusErisE5%20-%2001.png", "images/PresonusErisE5%20-%2002.png", "https://www.thomann.de/dk/presonus_eris_e5.htm#bewertung", "PreSonus<br>Eris E5", "1599 DKK", 10);
+            
+            //XLR-kabler
+            addItem(desktopRow, "images/xlr-01.png", "images/xlr-02.png", "https://www.thomann.de/dk/the_sssnake_mxp2009.htm", "the sssnake MXP2009<br>x2", "26 DKK", 10);
+            
+            // Microphone
+            //addItem(desktopRow, "images/NT1a-01.png", "images/NT1a-02.png", "https://www.pricerunner.dk/pl/176-3757968/Mikrofoner/ROEDE-NT1-A-Sammenlign-Priser", "RØDE NT1-A", "1299 DKK", 10);
+            addItem(desktopRow, "images/STC2-01.png", "images/STC2-02.png", "https://www.thomann.de/dk/sontronics_stc2.htm", "Sontronics STC-2", "1590 DKK", 10);
+            
+            //MicArm
+            //https://www.thomann.de/dk/km_232bk.htm
+            //https://www.thomann.de/dk/km_21160.htm
+            addItem(desktopRow, "images/arm2-01.png", "images/arm2-02.png", "https://www.thomann.de/dk/km_21160.htm", "K&M 21160<br>One-piece Boom", "109 DKK", 10);
+            addItem(desktopRow, "images/stand-01.png", "images/stand-02.png", "https://www.thomann.de/dk/km_232bk.htm", "K&M 232BK<br>Table Microphone Stand", "179 DKK", 10);
+            // addItem(desktopRow, "images/arm-01.png", "images/arm-02.png", "https://www.thomann.de/dk/millenium_ds_100.htm", "Millenium DS100", "211 DKK", 0);  
+
+            //iD4 Audio interface
+            addItem(desktopRow, "images/iD4-01.png", "images/iD4-02.png", "https://www.thomann.de/dk/audient_id4_mkii.htm?ref=intl&shp=eyJjb3VudHJ5IjoiZGsiLCJjdXJyZW5jeSI6NiwibGFuZ3VhZ2UiOiJkYSJ9", "Audient iD4 MKII", "1050 DKK", 10);
+            
+            //BenQ
+            addItem(desktopRow, "images/BenQ_Screenbar011.png", "images/BenQ_Screenbar02.png", "https://www.pricerunner.dk/pl/1618-3200056760/Ukategoriseret/Benq-Screenbar-Plus-E-Reading-Light-Sammenlign-Priser", "BenQ ScreenBar Plus<br>E-Reading Light", "968 DKK", 3);
+
+            //Headset stand
+            addItem(desktopRow, "images/headset_stand-01.png", "images/headset_stand-02.png", "https://www.pricerunner.dk/pl/94-3200082785/Hoeretelefoner/Satechi-Aluminium-USB-Headphone-Stand-Sammenlign-Priser", "Satechi Headphone Stand<br>Space Grey", "349 DKK", 7);
+
+            //Wacom tablet
+            addItem(desktopRow, "images/wacom-01.png", "images/wacom-02.png", "https://www.elgiganten.dk/product/pc-tablets/mus-og-tastatur/tegneplade/WACCTL4100KN/wacom-intuos-s-tegneplade-sort", "Wacom Intuos S tegneplade<br>Standard Black", "549 DKK", 6);
+
+            
+            /*******************************************
+            ********************************************
+            ********************************************
+            ********************************************
+            ********************************************
+                BOOKS
+            ********************************************
+            ********************************************
+            ********************************************
+            ********************************************
+            ********************************************/
+
+            var instrumentsRow = document.getElementById("section_books");
+            
+            //STUDIO 360
+            addItem(instrumentsRow, "images/studio360-01.png", "images/studio360-02.png", null, "HYBE INSIGHT<br>Postcard Book | Studio 360", "Under 500? DKK", 10);
+            
+            /*******************************************
+            ********************************************
+            ********************************************
+            ********************************************
+            ********************************************
+                INSTRMENTS
+            ********************************************
+            ********************************************
+            ********************************************
+            ********************************************
+            ********************************************/
+
+            var instrumentsRow = document.getElementById("section_instruments");
+            
+            //Guitar
+            addItem(instrumentsRow, "images/guitar-01.png", "images/guitar-02.png", "https://www.thomann.de/dk/yamaha_apx_t2_black.htm?ref=intl&shp=eyJjb3VudHJ5IjoiZGsiLCJjdXJyZW5jeSI6NiwibGFuZ3VhZ2UiOiJkYSJ9", "Yamaha APXT2<br>Black", "1777 DKK", 6);
+            
+            //Melodica
+            addItem(instrumentsRow, "images/melodica-01.png", "images/melodica-02.png", "https://www.thomann.de/dk/hohner_student_melodica_32_schwarz.htm", "Hohner Student<br>Melodica 32 Black", "369 DKK", 6);
+            
+            /*******************************************
+            ********************************************
+            ********************************************
+            ********************************************
+            ********************************************
+                CAMERA
+            ********************************************
+            ********************************************
+            ********************************************
+            ********************************************
+            ********************************************/
+
+            var cameraRow = document.getElementById("section_camera");
+            
+            //RØDE
+            addItem(cameraRow, "images/RODE%20-%2001.png", "images/RODE02.png", "https://www.pricerunner.dk/pl/176-3830685/Mikrofoner/ROEDE-VideoMicro-Sammenlign-Priser", "RØDE VideoMicro", "395 DKK", 7);
+            
+            /*******************************************
+            ********************************************
+            ********************************************
+            ********************************************
+            ********************************************
+                CLOTHES
+            ********************************************
+            ********************************************
+            ********************************************
+            ********************************************
+            ********************************************/
+
+            var clothesRow = document.getElementById("section_clothes");
+            
+            //Levi's Cubano Shirt
+            addItem(clothesRow, "images/bandana-01.png", "images/bandana-02.png", "https://www.zalando.dk/levis-cubano-skjorter-blacks-le221002z-q11.html?size=L&allophones=0&wmc=SEM450_NB_GO._7584348957_702712742_35403320823.&opc=2211&mpp=google%7cv1%7c%7cpla-270941263438%7c%7c1005023%7c%7cg%7cc%7c%7c161338453193%7c%7cpla%7cLE221002Z-Q11000L000%7c270941263438%7c1%7c&gclid=CjwKCAjwuIWHBhBDEiwACXQYsRVblK7OwXW8V9OvoNIH56rsngyo5_LHMFFYdBqrAMmuoEr-0EeaGhoC6fYQAvD_BwE&gclsrc=aw.ds", "Levi's<br>Cubano Shirt", "379 DKK", 6);
+            
+            //Muji
+            addItem(clothesRow, "images/muji-01.png", "images/muji-02.png", "https://www.mujionline.eu/dk/-organiccottonshijirajinbei-p/p?skuId=15980", "MUJI<br>Shijira Jinbei", "459 DKK", 6);
+            
+            //Weekday jeans - Black
+            addItem(clothesRow, "images/jeansBlack-01.png", "images/jeansBlack-02.png", "https://www.zalando.dk/weekday-arrow-low-jeans-straight-leg-washed-black-web21n03p-q11.html", "Weekday ARROW LOW<br> - Jeans Straight Leg", "303 DKK", 6);
+            
+            //Weekday jeans - Blue
+            addItem(clothesRow, "images/jeansBlue-01.png", "images/jeansBlue-02.png", "https://www.zalando.dk/weekday-arrow-low-jeans-straight-leg-belize-blue-web21n03p-k11.html", "Weekday ARROW LOW<br> - Jeans Straight Leg", "379 DKK", 6);            
+                        
+            //Balenciaga Triple S
+            addItem(clothesRow, "images/bb-01.png", "images/bb-02.png", "https://www.farfetch.com/dk/shopping/women/balenciaga-sorte-triple-s-sneakers-i-lder-item-12969830.aspx?storeid=10952", "Balenciaga<br>TRIPLE S SNEAKER", "5763 DKK", 7);
+            
+            //Dr. Martens MONO
+            addItem(clothesRow, "images/DMMono%20-%2001.png", "images/DMMono02.png", "https://www.zalando.dk/dr-martens-snoresko-mono-black-do215a00v-q11.html", "Dr. Martens<br>1461 Mono Black 38", "956 DKK", 4);
+            
+            //Dr. Martens Chealsea
+            addItem(clothesRow, "images/DMChelsea%20-%2001.png", "images/DMChelsea02.png", "https://www.pricerunner.dk/pl/337-3487922/Sko/Dr-Martens-2976-Chelsea-Boot-Black-Sammenlign-Priser", "Dr. Martens<br>2976 Chelsea Boots 38", "179 €", 0);
+            
+            /*******************************************
+            ********************************************
+            ********************************************
+            ********************************************
+            ********************************************
+                INTERIOR
+            ********************************************
+            ********************************************
+            ********************************************
+            ********************************************
+            ********************************************/
+
+            var interiorRow = document.getElementById("section_interior");
+            
+            //Ballon dog
+            addItem(interiorRow, "images/Ballon_dog%20-%2001.png", "images/Ballon_dog%20-%2002.png", "https://www.boyhood.dk/vare/ballon-dog-small-smoke-oak/", "Ballon d’Og Small<br>Smoke Stained Oak", "600 DKK", 0);
+            
+            //Kähler - Curious
+            addItem(interiorRow, "images/K_curious-01.png", "images/K_curious-02.png", "https://www.nordicnest.dk/varemarker/kahler/character-skulptur-med-budskab/?variantId=34384-01", "Kähler<br>THE CURIOUS ONE", "384 DKK", 0);
+            
+            //Kähler - Dreamer
+            addItem(interiorRow, "images/K_dreamer-01.png", "images/K_dreamer-02.png", "https://www.nordicnest.dk/varemarker/kahler/character-skulptur-med-budskab/?variantId=34384-02", "Kähler<br>THE DREAMER", "411 DKK", 0);
+            
+            //Kähler - Hedonist
+            addItem(interiorRow, "images/K_hedonist-01.png", "images/K_hedonist-02.png", "https://royaldesign.dk/character-the-hedonist-sculpture", "Kähler<br>THE HEDONIST", "375 DKK", 0);
+            
+            //Kähler - reflective
+            addItem(interiorRow, "images/K_reflective-01.png", "images/K_reflective-02.png", "https://www.nordicnest.dk/varemarker/kahler/character-skulptur-med-budskab/?variantId=34384-03", "Kähler<br>THE REFLECTIVE ONE", "374 DKK", 0);
+            
+            /*******************************************
+            ********************************************
+            ********************************************
+            ********************************************
+            ********************************************
+                TOYS
+            ********************************************
+            ********************************************
+            ********************************************
+            ********************************************
+            ********************************************/
+            
+            var interiorRow = document.getElementById("section_toys");
+            
+            //Ballon dog
+            addItem(interiorRow, "images/nerf-01.png", "images/nerf-02.png", "https://www.pricerunner.dk/pl/72-3819613/Legetoej/Nerf-N-Strike-Elite-AccuStrike-Series-FalconFire-Sammenlign-Priser", "NERF <br> N-Strike Falconfire", "180 DKK", 3);
+            
+            
+            
+        }
+    </script>
 </html>

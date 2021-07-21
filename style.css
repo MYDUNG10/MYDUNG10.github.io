@@ -9,19 +9,30 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #232120;
+    /*background-color: #232120;*/
+    background-color: #f1eee4;
     text-align: center;
 }
 
+/*
+    "Wish List"
+*/
 .header {
-    color: #ddd6cd;
+    /*color: #ddd6cd;*/
+    /*color: #58c2be;*/
+    color: #69563d;
     font-weight: 900;
     font-size: 5em;
     padding: .2em;
 }
 
+/*
+    "DUNG"
+*/
 .name {
-    color: #37913d;
+    /*color: #37913d;*/
+    /*color: #63c269;*/
+    color: #d49746;
 }
 
 .row {
@@ -46,7 +57,8 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    color: #333333;
+    /*color: #333333;*/
+    color: #eee9da;
     font-size: 1.1em;
     font-weight: 200;
     text-align: left;
@@ -62,7 +74,11 @@ body {
     opacity: 0;
     transition: opacity 1s ease-out;
 }
-.label{
+
+/*
+    Text
+*/
+.label {
     color: #656565;
     font-weight: 300;
     position: absolute;
@@ -70,60 +86,95 @@ body {
     top: .3em;
     width: 100%;
     font-size: 1.5em;
+    margin: 0;
 }
-.price{
+
+/*
+    Price
+*/
+.label_bottom {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 20%;
-    background: #bab5a2;
-/*    background: #e4cd5a;*/
-}
-.price p {
-    color: white;
+    height: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     font-weight: 900;
-    font-size: 2.5em;
-    text-align: center; 
-    padding: 0;
+}
+.price {
+    /*background-color: #ee712a;*/
+    background-color: #4b88ab;
+    color: white;
     margin: 0;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    padding: 0;
+    width: 100%;
+}
+
+.hearts {
+    margin: 0;
+    color: #4b88ab;
 }
 
 .hover_wrapper:hover{
     opacity: 1;
 }
 
-@media screen and (max-width: 1300px) {
+/*
+    Section
+*/
+.divider {
+    font-size: 30pt;
+    background-color: #41403c;
+    font-weight: 600;
+    text-align: left;
+    padding: 0.5em;
+    color: #fbe34d;
+}
+
+
+@media screen {
     .label{
-        font-size: 1em;
+        font-size: 1.2em;
+    }
+    
+    .label_bottom {
+        font-size: 40px;
+    }    
+    .price {
+        font-size: 2.5vw;
+    }
+    .hearts {
+        font-size: 1vw;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .label{
-        font-size: 1.2em;
-    }
     .item {
         flex: 25%;
         max-width: 25%;
     }
+    .price {
+        font-size: 4vw;
+    }
+    .hearts {
+        font-size: 2vw;
+    }
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
-
-    .price {
-        font-size: 1.5em;
-    }
     .item {
         flex: 50%;
         max-width: 50%;
     }
+    .price {
+        font-size: 7vw;
+    }
+    .hearts {
+        font-size: 3vw;
+    }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .label {
         font-size: 2em;
@@ -132,5 +183,10 @@ body {
         flex: 100%;
         max-width: 100%;
     }
+    .price {
+        font-size: 10vw;
+    }
+    .hearts {
+        font-size: 6vw;
+    }
 }
-
