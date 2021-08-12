@@ -120,9 +120,6 @@ body {
     opacity: 1;
 }
 
-/*
-    Section
-*/
 .divider {
     font-size: 30pt;
     background-color: #41403c;
@@ -190,3 +187,4 @@ body {
         font-size: 6vw;
     }
 }
+

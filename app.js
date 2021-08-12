@@ -32,10 +32,8 @@ function addItem(container, imgPath, imgHoverPath, websiteURL, labelText, priceT
     
     item.appendChild(img);
     if (websiteURL != null) {
-
         a.href = websiteURL;
         a.target = "_blank";
-
         }
     
 
